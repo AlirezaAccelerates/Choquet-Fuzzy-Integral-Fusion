@@ -13,7 +13,7 @@ pip install numpy cvxopt
 ## Usage
 Initialization
 To instantiate the ChoquetIntegral class:
-```
+```python
 from choquet_integral import ChoquetIntegral
 
 chi = ChoquetIntegral()
