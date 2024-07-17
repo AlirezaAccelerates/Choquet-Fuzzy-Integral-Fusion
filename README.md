@@ -20,7 +20,7 @@ chi = ChoquetIntegral()
 ```
 ## Training
 To train the model, you need to provide the training samples and their corresponding labels. The training samples should be a NumPy array of size N x M (inputs x number of samples), and the labels should be a NumPy array of size 1 x M (label per sample).
-```
+```python
 train_samples = np.array(...)  # Replace with your training samples
 train_labels = np.array(...)   # Replace with your training labels
 
@@ -29,7 +29,7 @@ chi.fit(train_samples, train_labels)
 
 ## Prediction
 To make predictions with the trained model, provide the test sample:
-```
+```python
 test_sample = np.array(...)  # Replace with your test sample
 
 prediction = chi.predict(test_sample)
@@ -49,7 +49,7 @@ get_fm_class_img_coeff(Lattice, h, fm_len): Creates a fuzzy measure map with the
 get_keys_index(): Sets up a dictionary for referencing FM components.
 Example
 Here's a brief example demonstrating how to use the ChoquetIntegral class:
-```
+```python
 import numpy as np
 from choquet_integral import ChoquetIntegral
 
@@ -72,7 +72,7 @@ print("Prediction:", prediction)
 ```
 
 If you are interested, please cite:
-```
+```bash
 @inproceedings{rafiei2022automated,
   title={Automated major depressive disorder classification using deep convolutional neural networks and Choquet fuzzy integral fusion},
   author={Rafiei, Alireza and Wang, Yu-Kai},
